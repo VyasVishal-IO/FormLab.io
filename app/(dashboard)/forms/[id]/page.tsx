@@ -61,38 +61,38 @@ async function FormDetailPage({
       <div className="w-full pt-8 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container">
         <StatsCard
           title="Total submissions"
-          icon={<FaWpforms className="text-yellow-600" />}
+          icon={<FaWpforms className="text-white-600" />}
           helperText="All time form submissions"
           value={submissions.toLocaleString() || ""}
           loading={false}
-          className="shadow-md shadow-yellow-600"
+          className=""
         />
 
         <StatsCard
           title="Total visits"
-          icon={<LuView className="text-blue-600" />}
+          icon={<LuView className="text-white-600" />}
           helperText="All time form visits"
           value={visits.toLocaleString() || ""}
           loading={false}
-          className="shadow-md shadow-blue-600"
+          className=""
         />
 
         <StatsCard
           title="Submission Rate"
-          icon={<HiCursorClick className="text-green-600" />}
+          icon={<HiCursorClick className="text-white-600" />}
           helperText="All time form visits"
           value={submissionRate.toLocaleString() + "%" || ""}
           loading={false}
-          className="shadow-md shadow-green-600"
+          className=""
         />
 
         <StatsCard
           title="Bounce Rate"
-          icon={<TbArrowBounce className="text-red-600" />}
+          icon={<TbArrowBounce className="text-white-600" />}
           helperText="Visits that leave without interactig"
           value={bounceRate.toLocaleString() + "%" || ""}
           loading={false}
-          className="shadow-md shadow-red-600"
+          className=""
         />
       </div>
 
